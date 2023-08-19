@@ -49,12 +49,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     } else if (elem1 > elem2) {
       return 1;
     }
-    // a must be equal to b
+
     return 0;
   }
 
-  const filteredArray = strangeArray.filter(element => typeof element === 'string');
-  filteredArray.sort(compareFn);
+  const filteredArray = strangeArray.filter(element => typeof element === 'string').sort(compareFn);
   showList(filteredArray)
 });
 
