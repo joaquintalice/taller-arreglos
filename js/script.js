@@ -56,7 +56,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   const filteredArray = strangeArray.filter(element => typeof element === 'string');
 
-  const newArray = filteredArray.sort(compareFn);
+  filteredArray.sort(compareFn);
 
-  showList(newArray)
+  showList(filteredArray)
 });
+
+
