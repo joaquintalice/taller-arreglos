@@ -53,11 +53,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     return 0;
   }
 
-
   const filteredArray = strangeArray.filter(element => typeof element === 'string');
-
   filteredArray.sort(compareFn);
-
   showList(filteredArray)
 });
 
